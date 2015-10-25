@@ -5,3 +5,5 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 #defer-promise
+
+A function returning a deferred promise. It will use native `Promise.defer`, else polyfill.
