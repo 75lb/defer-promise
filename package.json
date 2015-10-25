@@ -1,12 +1,18 @@
 {
   "name": "defer-promise",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "defer-promise",
   "repository": "https://github.com/75lb/defer-promise.git",
   "license": "MIT",
   "main": "./lib/defer-promise.js",
-  "keywords": [ "defer", "promise", "es6", "native", "deferred" ],
+  "keywords": [
+    "defer",
+    "promise",
+    "es6",
+    "native",
+    "deferred"
+  ],
   "engines": {
     "node": ">=0.10.0"
   },
