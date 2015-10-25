@@ -6,10 +6,7 @@
   "repository": "https://github.com/75lb/defer-promise.git",
   "license": "MIT",
   "main": "./lib/defer-promise.js",
-  "bin": {
-    "defer-promise": "bin/cli.js"
-  },
-  "keywords": [],
+  "keywords": [ "defer", "promise", "es6", "native", "deferred" ],
   "engines": {
     "node": ">=0.10.0"
   },
