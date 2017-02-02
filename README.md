@@ -6,7 +6,7 @@
 
 # defer-promise
 
-Returns a deferred promise with `resolve` and `reject` methods. If a global `Promise` object with a `defer` method is found, it will use that, else polyfill.
+Returns a deferred promise with `resolve` and `reject` methods. If the global `Promise.defer()` method exists it will use that, else polyfill.
 
 ```js
 const defer = require('defer-promise')
