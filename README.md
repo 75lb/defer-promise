@@ -8,6 +8,21 @@
 
 Returns a deferred promise with `resolve` and `reject` methods. If a global `Promise` object with a `defer` method is found, it will use that, else polyfill.
 
+```js
+const defer = require('defer-promise')
+const deferred = defer()
+
+doSomething((result, err) => {
+  if (err) {
+    deferred.reject(err)
+  } else {
+    deferred.resolve(result)
+  }
+})
+
+return deferred.promise;
+```
+
 * * *
 
-&copy; 2015-16 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015-17 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).

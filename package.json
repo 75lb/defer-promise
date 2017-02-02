@@ -17,7 +17,10 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "tape test/*.js",
+    "test": "test-runner test/*.js",
     "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+  },
+  "devDependencies": {
+    "test-runner": "^0.3.0"
   }
 }
