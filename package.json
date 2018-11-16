@@ -1,7 +1,7 @@
 {
   "name": "defer-promise",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Returns a deferred promise. Uses native `Promise.defer` if available, else polyfill.",
   "repository": "https://github.com/75lb/defer-promise.git",
   "license": "MIT",
@@ -12,7 +12,9 @@
     "native",
     "deferred"
   ],
-  "files": [ "index.js" ],
+  "files": [
+    "index.js"
+  ],
   "engines": {
     "node": ">=4.0.0"
   },
