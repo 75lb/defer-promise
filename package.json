@@ -2,10 +2,9 @@
   "name": "defer-promise",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "1.0.1",
-  "description": "defer-promise",
+  "description": "Returns a deferred promise. Uses native `Promise.defer` if available, else polyfill.",
   "repository": "https://github.com/75lb/defer-promise.git",
   "license": "MIT",
-  "main": "./lib/defer-promise.js",
   "keywords": [
     "defer",
     "promise",
@@ -13,14 +12,14 @@
     "native",
     "deferred"
   ],
+  "files": [ "index.js" ],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "test-runner test/*.js",
-    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+    "test": "test-runner test.js"
   },
   "devDependencies": {
-    "test-runner": "^0.3.0"
+    "test-runner": "^0.5.1"
   }
 }

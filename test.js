@@ -1,5 +1,5 @@
 const TestRunner = require('test-runner')
-const defer = require('../')
+const defer = require('./')
 
 const runner = new TestRunner()
 
