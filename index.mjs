@@ -3,7 +3,6 @@
 /**
  * @module defer-promise
  */
-module.exports = defer
 
 function defer () {
   if (typeof Promise !== 'undefined' && Promise.defer) {
@@ -17,3 +16,5 @@ function defer () {
     return deferred
   }
 }
+
+export default defer
