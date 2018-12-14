@@ -14,7 +14,8 @@
   ],
   "main": "dist/index.js",
   "files": [
-    "index.js"
+    "index.mjs",
+    "dist/index.js"
   ],
   "engines": {
     "node": ">=6.0.0"
