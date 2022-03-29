@@ -13,6 +13,7 @@ Isomorphic function returning a deferred promise with `resolve` and `reject` met
 import defer from 'defer-promise'
 const deferred = defer()
 
+/* Async function using a callback instead of returning a promise */
 doSomething((result, err) => {
   if (err) {
     deferred.reject(err)
@@ -21,7 +22,7 @@ doSomething((result, err) => {
   }
 })
 
-return deferred.promise;
+const result = await deferred.promise;
 ```
 
 ## Load anywhere
