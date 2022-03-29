@@ -1,9 +1,10 @@
-const TestRunner = require('test-runner')
-const defer = require('./')
+import TestRunner from 'test-runner'
+import { strict as a } from 'assert'
+import defer from 'defer-promise'
 
-const runner = new TestRunner()
+const tom = new TestRunner.Tom()
 
-runner.test('resolve', function () {
+tom.test('resolve', function () {
   const deferred = defer()
   process.nextTick(() => {
     deferred.resolve('ok')
@@ -11,7 +12,7 @@ runner.test('resolve', function () {
   return deferred.promise
 })
 
-runner.test('reject', function () {
+tom.test('reject', function () {
   const deferred = defer()
   process.nextTick(() => {
     deferred.reject(new Error('test'))
@@ -28,3 +29,5 @@ runner.test('reject', function () {
       }
     })
 })
+
+export default tom

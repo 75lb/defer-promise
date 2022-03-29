@@ -1,7 +1,8 @@
-[![view on npm](http://img.shields.io/npm/v/defer-promise.svg)](https://www.npmjs.org/package/defer-promise)
-[![npm module month](http://img.shields.io/npm/dt/defer-promise.svg)](https://www.npmjs.org/package/defer-promise)
-[![Build Status](https://travis-ci.org/75lb/defer-promise.svg?branch=master)](https://travis-ci.org/75lb/defer-promise)
-[![Dependency Status](https://david-dm.org/75lb/defer-promise.svg)](https://david-dm.org/75lb/defer-promise)
+[![view on npm](https://badgen.net/npm/v/defer-promise)](https://www.npmjs.org/package/defer-promise)
+[![npm module downloads](https://badgen.net/npm/dt/defer-promise)](https://www.npmjs.org/package/defer-promise)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/75lb/defer-promise)](https://github.com/75lb/defer-promise/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/75lb/defer-promise)](https://github.com/75lb/defer-promise/network/dependents?dependent_type=PACKAGE)
+[![Node.js CI](https://github.com/75lb/defer-promise/actions/workflows/node.js.yml/badge.svg)](https://github.com/75lb/defer-promise/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # defer-promise
@@ -9,7 +10,7 @@
 Isomorphic function returning a deferred promise with `resolve` and `reject` methods. If the global `Promise.defer()` method exists it will use that, else polyfill.
 
 ```js
-const defer = require('defer-promise')
+import defer from 'defer-promise'
 const deferred = defer()
 
 doSomething((result, err) => {
@@ -27,7 +28,7 @@ return deferred.promise;
 
 This library can be loaded anywhere, natively without transpilation.
 
-Node.js:
+Common JS:
 
 ```js
 const defer = require('defer-promise')
@@ -42,15 +43,9 @@ import defer from 'defer-promise'
 Modern browser ECMAScript Module:
 
 ```js
-import defer from './node_modules/defer-promise/index.mjs'
-```
-
-Old browser (adds `window.defer`):
-
-```html
-<script nomodule src="./node_modules/defer-promise/dist/index.js"></script>
+import defer from './node_modules/defer-promise/index.js'
 ```
 
 * * *
 
-&copy; 2015-18 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015-22 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
