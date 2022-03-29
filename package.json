@@ -25,7 +25,8 @@
     "node": ">=12.17"
   },
   "scripts": {
-    "test": "test-runner test.js",
+    "test": "npm run dist && test-runner test.js",
+    "test:ci": "test-runner test.js",
     "dist": "rollup -c"
   },
   "devDependencies": {
