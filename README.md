@@ -5,7 +5,7 @@
 [![Node.js CI](https://github.com/75lb/defer-promise/actions/workflows/node.js.yml/badge.svg)](https://github.com/75lb/defer-promise/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
-***Deprecated. Defered promises have been standardised by the native [Promise.withResolvers()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/withResolvers) method.***
+***Deprecated. Defered promises have been standardised by the native [Promise.withResolvers()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/withResolvers) method. This library will continue to function correctly but will no longer be maintained.***
 
 # defer-promise
 
