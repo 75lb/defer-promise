@@ -5,6 +5,8 @@
 [![Node.js CI](https://github.com/75lb/defer-promise/actions/workflows/node.js.yml/badge.svg)](https://github.com/75lb/defer-promise/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
+*** Deprecated. Defered promises have been standardised by the native [Promise.withResolvers()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/withResolvers) method. ***
+
 # defer-promise
 
 Isomorphic function returning a deferred promise with `resolve` and `reject` methods. If the global `Promise.defer()` method exists it will use that, else polyfill.
@@ -49,4 +51,4 @@ import defer from './node_modules/defer-promise/index.js'
 
 * * *
 
-&copy; 2015-22 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015-26 Lloyd Brookes \<opensource@75lb.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
