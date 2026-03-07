@@ -1,7 +1,7 @@
 {
   "name": "defer-promise",
   "author": "Lloyd Brookes <opensource@75lb.com>",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Isomorphic function returning a deferred promise. Uses native `Promise.defer` if available, else polyfills.",
   "repository": {
     "type": "git",
